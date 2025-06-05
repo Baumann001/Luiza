@@ -1,33 +1,18 @@
-@keyframes subir {
-      0% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-100vh);
-        opacity: 0;
-      }
-    }
-
 body {
   background-color: pink;
   color: white;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 20px;
   text-align: center;
   overflow-x: hidden;
-  
+  position: relative;
+  min-height: 100vh;
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 #posicionar {
@@ -35,10 +20,11 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
 #posicionar img {
-  width: 200px;
+  width: 100px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -50,13 +36,33 @@ p {
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-@keyframes subir {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
+#playBtn {
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+#playBtn:hover {
+  color: #ddd;
+}
+
+#lyrics {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+#lyrics p {
+  margin: 0;
 }
