@@ -1,5 +1,4 @@
-<script>
-    function criarCoracao() {
+function criarCoracao() {
       const coracao = document.createElement("div");
       coracao.innerText = "💗";
       coracao.style.position = "absolute";
@@ -14,5 +13,3 @@
     }
 
     setInterval(criarCoracao, 300);
-
-  </script>
